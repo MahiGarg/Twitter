@@ -10,13 +10,34 @@ import Foundation
 class HomeViewModel: BaseViewModel, ObservableObject {
     
     @Published var postArray: [PostData] = []
-    var post: PostData = PostData(profilePicture: URL(string: "https://source.unsplash.com/user/c_v_r")!,
-                                  media: URL(string: "https://source.unsplash.com/user/c_v_r")!,
-                                  name: "Narendra Modi",
-                                  userName: "@NarendraModi",
-                                  isVerifiedAccount: true, postedDate: ".4d",
-                                  text: "It's never a bad thing to go with a classic, direct good morning. This text is simple and to the point, simply wishing your man a good morning, making him feel special, and putting a smile on his face.",
-                                  reply: 211,
-                                  retweet: 12, like: 790)
+    
+    var currentPageNumber = 0
+    var isAPICallOngoing = false
+    var pageSize = 10
+    
+    func fetchPosts() {
+        
+        guard !isAPICallOngoing else {
+            //API Call already ongoing, wait for result
+            return
+        }
+        
+        isAPICallOngoing = true
+        
+        currentPageNumber = currentPageNumber + 1
+        PostRepository.instance.getposts(queryParams: PostRequestData(pageSize: 10,
+                                                                      pageNumber: currentPageNumber),
+                                         onSuccess: { data in
+            self.postArray.append(contentsOf: data)
+            self.isAPICallOngoing = false
+        }, onError: { error in
+            self.isAPICallOngoing = false
+            
+            //Since the API failed, redure the page number
+            self.currentPageNumber = self.currentPageNumber - 1
+            
+            //show this to UI
+        })
+    }
     
 }

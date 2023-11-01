@@ -20,14 +20,19 @@
 		E91905582AEF4E1600C1407A /* BaseRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91905572AEF4E1600C1407A /* BaseRespository.swift */; };
 		E919055A2AEF4E4A00C1407A /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91905592AEF4E4A00C1407A /* BaseService.swift */; };
 		E919055E2AEF4EE800C1407A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919055D2AEF4EE800C1407A /* HomeView.swift */; };
-		E91905602AEF523700C1407A /* MyProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919055F2AEF523700C1407A /* MyProfileData.swift */; };
+		E91905602AEF523700C1407A /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919055F2AEF523700C1407A /* ProfileData.swift */; };
 		E91905622AEF52D900C1407A /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91905612AEF52D900C1407A /* PostData.swift */; };
 		E91905642AEF551300C1407A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91905632AEF551300C1407A /* PostView.swift */; };
 		E91905672AEF5B1700C1407A /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91905662AEF5B1700C1407A /* Image.swift */; };
-		E91905692AEF76A300C1407A /* UIScreenDimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91905682AEF76A300C1407A /* UIScreenDimensions.swift */; };
-		E919056B2AEF941700C1407A /* PostViewDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919056A2AEF941700C1407A /* PostViewDummy.swift */; };
 		E919056D2AEFADB100C1407A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919056C2AEFADB100C1407A /* HomeViewModel.swift */; };
 		E919056F2AEFBAB800C1407A /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919056E2AEFBAB800C1407A /* Text.swift */; };
+		E9B3A3592AF0A14900D13C5A /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3A3582AF0A14900D13C5A /* PostService.swift */; };
+		E9B3A35B2AF0A1E100D13C5A /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3A35A2AF0A1E100D13C5A /* PostRepository.swift */; };
+		E9B3A35E2AF0A31400D13C5A /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3A35D2AF0A31400D13C5A /* Encodable.swift */; };
+		E9B3A3602AF0A34B00D13C5A /* PostRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3A35F2AF0A34B00D13C5A /* PostRequestData.swift */; };
+		E9CCF5092AF2303400C85C7F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CCF5082AF2303400C85C7F /* String.swift */; };
+		E9CCF50B2AF2311000C85C7F /* Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CCF50A2AF2311000C85C7F /* Integer.swift */; };
+		E9CCF50D2AF232C100C85C7F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CCF50C2AF232C100C85C7F /* Date.swift */; };
 		F0010B6330B92E716D3ADEF9 /* Pods_TwitterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3883CA17B975C61CEFB0CF /* Pods_TwitterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,14 +77,19 @@
 		E91905572AEF4E1600C1407A /* BaseRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRespository.swift; sourceTree = "<group>"; };
 		E91905592AEF4E4A00C1407A /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		E919055D2AEF4EE800C1407A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		E919055F2AEF523700C1407A /* MyProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileData.swift; sourceTree = "<group>"; };
+		E919055F2AEF523700C1407A /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		E91905612AEF52D900C1407A /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		E91905632AEF551300C1407A /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		E91905662AEF5B1700C1407A /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		E91905682AEF76A300C1407A /* UIScreenDimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenDimensions.swift; sourceTree = "<group>"; };
-		E919056A2AEF941700C1407A /* PostViewDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewDummy.swift; sourceTree = "<group>"; };
 		E919056C2AEFADB100C1407A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E919056E2AEFBAB800C1407A /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		E9B3A3582AF0A14900D13C5A /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		E9B3A35A2AF0A1E100D13C5A /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
+		E9B3A35D2AF0A31400D13C5A /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		E9B3A35F2AF0A34B00D13C5A /* PostRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostRequestData.swift; path = ../../../../PostRequestData.swift; sourceTree = "<group>"; };
+		E9CCF5082AF2303400C85C7F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E9CCF50A2AF2311000C85C7F /* Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Integer.swift; sourceTree = "<group>"; };
+		E9CCF50C2AF232C100C85C7F /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +140,6 @@
 				A5B4AED7808E2ADB2402E959 /* Pods-TwitterTests.debug.xcconfig */,
 				98211C391E36684A0B90E01B /* Pods-TwitterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -159,6 +168,7 @@
 		E91905232AEF4C3400C1407A /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				E9B3A35C2AF0A30000D13C5A /* Extensions */,
 				E91905652AEF5AEF00C1407A /* Utilities */,
 				E91905522AEF4D5D00C1407A /* Models */,
 				E91905512AEF4D4600C1407A /* ViewModels */,
@@ -203,7 +213,6 @@
 			children = (
 				E919055D2AEF4EE800C1407A /* HomeView.swift */,
 				E91905632AEF551300C1407A /* PostView.swift */,
-				E919056A2AEF941700C1407A /* PostViewDummy.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,8 +229,9 @@
 		E91905522AEF4D5D00C1407A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E919055F2AEF523700C1407A /* MyProfileData.swift */,
+				E919055F2AEF523700C1407A /* ProfileData.swift */,
 				E91905612AEF52D900C1407A /* PostData.swift */,
+				E9B3A35F2AF0A34B00D13C5A /* PostRequestData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				E91905572AEF4E1600C1407A /* BaseRespository.swift */,
+				E9B3A35A2AF0A1E100D13C5A /* PostRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -238,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				E91905592AEF4E4A00C1407A /* BaseService.swift */,
+				E9B3A3582AF0A14900D13C5A /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -246,10 +258,20 @@
 			isa = PBXGroup;
 			children = (
 				E91905662AEF5B1700C1407A /* Image.swift */,
-				E91905682AEF76A300C1407A /* UIScreenDimensions.swift */,
 				E919056E2AEFBAB800C1407A /* Text.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E9B3A35C2AF0A30000D13C5A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9CCF5082AF2303400C85C7F /* String.swift */,
+				E9B3A35D2AF0A31400D13C5A /* Encodable.swift */,
+				E9CCF50A2AF2311000C85C7F /* Integer.swift */,
+				E9CCF50C2AF232C100C85C7F /* Date.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +285,7 @@
 				E919051D2AEF4C3400C1407A /* Sources */,
 				E919051E2AEF4C3400C1407A /* Frameworks */,
 				E919051F2AEF4C3400C1407A /* Resources */,
+				F1CA85F7DF2F6656F2ECD8FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -465,6 +488,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F1CA85F7DF2F6656F2ECD8FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twitter/Pods-Twitter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twitter/Pods-Twitter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Twitter/Pods-Twitter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -476,14 +516,19 @@
 				E91905622AEF52D900C1407A /* PostData.swift in Sources */,
 				E91905252AEF4C3400C1407A /* TwitterApp.swift in Sources */,
 				E91905672AEF5B1700C1407A /* Image.swift in Sources */,
-				E91905692AEF76A300C1407A /* UIScreenDimensions.swift in Sources */,
+				E9B3A3602AF0A34B00D13C5A /* PostRequestData.swift in Sources */,
+				E9B3A35B2AF0A1E100D13C5A /* PostRepository.swift in Sources */,
 				E91905582AEF4E1600C1407A /* BaseRespository.swift in Sources */,
+				E9CCF50B2AF2311000C85C7F /* Integer.swift in Sources */,
+				E9CCF5092AF2303400C85C7F /* String.swift in Sources */,
 				E919055E2AEF4EE800C1407A /* HomeView.swift in Sources */,
-				E919056B2AEF941700C1407A /* PostViewDummy.swift in Sources */,
+				E9CCF50D2AF232C100C85C7F /* Date.swift in Sources */,
 				E919056D2AEFADB100C1407A /* HomeViewModel.swift in Sources */,
-				E91905602AEF523700C1407A /* MyProfileData.swift in Sources */,
+				E91905602AEF523700C1407A /* ProfileData.swift in Sources */,
+				E9B3A3592AF0A14900D13C5A /* PostService.swift in Sources */,
 				E919055A2AEF4E4A00C1407A /* BaseService.swift in Sources */,
 				E91905642AEF551300C1407A /* PostView.swift in Sources */,
+				E9B3A35E2AF0A31400D13C5A /* Encodable.swift in Sources */,
 				E919056F2AEFBAB800C1407A /* Text.swift in Sources */,
 				E91905562AEF4DD100C1407A /* BaseViewModel.swift in Sources */,
 			);
@@ -645,6 +690,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Twitter/Preview Content\"";
+				DEVELOPMENT_TEAM = 93VTQ23289;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -674,6 +720,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Twitter/Preview Content\"";
+				DEVELOPMENT_TEAM = 93VTQ23289;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

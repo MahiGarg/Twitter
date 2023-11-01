@@ -6,24 +6,31 @@
 //
 
 import SwiftUI
+import AVKit
 
 func postView(post: PostData)-> some View {
     
     var postContent: some View {
         VStack {
-            RemoteText(text: post.text,
+            RemoteText(text: post.contentText,
                        size: 12,
                        lineLimit: 5,
                        textAlignment: .leading)
-            RemoteImage(url: post.media, placeholder: Image(systemName: "photo"))
-                .cornerRadius(16)
-                .frame(maxHeight: 240, alignment: .leading)
+            if let picture = post.postPictureUrl, post.mediaState == 1 {
+                RemoteImage(url: picture, placeholder: Image(systemName: "photo"))
+                    .cornerRadius(16)
+                    .frame(height: 240, alignment: .leading)
+            } else if let video = post.videoUrl, post.mediaState == 2 {
+                VideoPlayer(player: AVPlayer(url:  video))
+                        .cornerRadius(16)
+                        .frame(height: 320, alignment: .leading)
+            } 
         }
     }
     
     var titleBar: some View {
         HStack( spacing: 2) {
-            RemoteText(text: post.name,
+            RemoteText(text: post.username,
                        size: 12,
                        lineLimit: 1)
             .bold()
@@ -33,11 +40,11 @@ func postView(post: PostData)-> some View {
                              width: 12,
                              height: 12)
             }
-            RemoteText(text: post.userName,
+            RemoteText(text: post.userHandle,
                        size: 12,
                        color: .gray,
                        lineLimit: 1)
-            RemoteText(text: post.postedDate,
+            RemoteText(text: post.postTime,
                        size: 12,
                        color: .gray,
                        lineLimit: 1)
@@ -51,45 +58,45 @@ func postView(post: PostData)-> some View {
         HStack(spacing: 16) {
             HStack {
                 SystemImages("text.bubble",
-                             color: .gray,
+                             color: .black,
                              width: 12,
                              height: 12)
-                RemoteText(text: String(post.reply),
+                RemoteText(text: post.replyText,
                            size: 12,
-                           color: .gray,
+                           color: .black,
                            lineLimit: 1)
             }
             HStack {
                 SystemImages("heart",
-                             color: .gray,
+                             color: .black,
                              width: 12,
                              height: 12)
-                RemoteText(text: String(post.like),
+                RemoteText(text: post.likeText,
                            size: 12,
-                           color: .gray,
+                           color: .black,
                            lineLimit: 1)
             }
             HStack {
                 SystemImages("arrow.counterclockwise",
-                             color: .gray,
+                             color: .black,
                              width: 12,
                              height: 12)
-                RemoteText(text: String(post.retweet),
+                RemoteText(text: post.retweetText,
                            size: 12,
-                           color: .gray,
+                           color: .black,
                            lineLimit: 1)
             }
             Spacer()
             SystemImages("square.and.arrow.up",
-                         color: .gray,
+                         color: .black,
                          width: 12,
                          height: 12)
-                .padding(.horizontal)
+            .padding(.horizontal)
         }
     }
     
     var profileImage: some View {
-        RemoteImage(url: post.profilePicture,
+        RemoteImage(url: post.profilePictureUrl,
                     placeholder: Image(systemName: "photo"))
         .clipShape(Circle())
         .frame(width: 48, height: 48)
@@ -102,6 +109,7 @@ func postView(post: PostData)-> some View {
                 titleBar
                 postContent
                 actionBar
+                    .padding(8)
             }
         }
     }

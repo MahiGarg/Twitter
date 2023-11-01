@@ -9,9 +9,12 @@ import Foundation
 
 class BaseViewModel {
     
-    @Published var profileData: MyProfileData = MyProfileData(name: "Mahi Garg",
-                                                              UserName: "dmahigarg",
-                                                              follower: 20,
-                                                              following: 100,
-                                                              picture: URL(string: "https://source.unsplash.com/user/c_v_r")!)
+    @Published var selfProfileData: ProfileData = ProfileData(username: "Mahi Garg",
+                                                          userHandle: "mahigarg",
+                                                          followerCount: 20,
+                                                          followingCount: 100,
+                                                          profilePicUrl: URL(string: "https://source.unsplash.com/user/c_v_r")!)
+    
+    
+    
 }

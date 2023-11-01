@@ -7,15 +7,19 @@ target 'Twitter' do
 
   # Pods for Twitter
 
+	pod 'Alamofire'
+
   target 'TwitterTests' do
     inherit! :search_paths
     # Pods for testing
+
+	
   end
 
   target 'TwitterUITests' do
     # Pods for testing
-
-	pod 'Alamofire'
+	
+	
   end
 
 end
